@@ -22,13 +22,15 @@ MainWindow::~MainWindow()
 //------------------------------------------------------------------------------
 void MainWindow::setup_ui()
 {
-	// TODO: maybe come up with a better solution than this
-	this->setMaximumWidth(130);
+	QSizePolicy win_size_policy = QSizePolicy(QSizePolicy::Minimum, 
+		QSizePolicy::Minimum);
+	this->setSizePolicy(win_size_policy);
 
 	main_widget = new QWidget();
 	main_layout = new QVBoxLayout(main_widget);
 
 	weight_label = new QLabel("Weight (grains)", this);
+	
 	main_layout->addWidget(weight_label);
 	weight_edit = new QLineEdit(this);
 	main_layout->addWidget(weight_edit);
@@ -48,6 +50,7 @@ void MainWindow::setup_ui()
 	main_layout->addWidget(ke_edit);
 
 	this->setCentralWidget(main_widget);
+	main_widget->resize(160, 0);
 }
 
 //------------------------------------------------------------------------------
