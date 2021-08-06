@@ -3,6 +3,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QVBoxLayout>
 
 //------------------------------------------------------------------------------
 main_window::main_window(QWidget *parent)
@@ -16,7 +17,15 @@ main_window::main_window(QWidget *parent)
 //------------------------------------------------------------------------------
 main_window::~main_window()
 {
-
+	delete ke_edit;
+	delete ke_label;
+	delete calc_button;
+	delete velocity_edit;
+	delete velocity_label;
+	delete weight_edit;
+	delete weight_label;
+	delete main_layout;
+	delete main_widget;
 }
 
 //------------------------------------------------------------------------------

@@ -2,12 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QVBoxLayout>
 
-class QWidget;
 class QLabel;
-class QPushButton;
 class QLineEdit;
+class QPushButton;
+class QVBoxLayout;
+class QWidget;
 
 class main_window : public QMainWindow
 {
