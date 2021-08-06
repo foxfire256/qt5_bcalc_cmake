@@ -9,13 +9,13 @@ class QLabel;
 class QPushButton;
 class QLineEdit;
 
-class MainWindow : public QMainWindow
+class main_window : public QMainWindow
 {
 	Q_OBJECT
 
 public:
-	MainWindow(QWidget *parent = 0);
-	~MainWindow();
+	main_window(QWidget *parent = 0);
+	~main_window();
 
 public slots:
 	void do_calc();

@@ -1,10 +1,10 @@
-#include "MainWindow.hpp"
+#include "main_window.hpp"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
-	MainWindow w;
+	main_window w;
 	// https://doc.qt.io/qt-5/qtwidgets-widgets-windowflags-example.html
 	// https://doc.qt.io/qt-5/qt.html#WindowType-enum
 	Qt::WindowFlags flags = 0;
