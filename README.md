@@ -6,7 +6,11 @@ This is a simple Qt5 application that takes two numbers, performs a calculation,
 
 Download the opensource version of the Qt Toolkit. You will need to create an account to install. Don't install the preview builds of Qt in the installer. Install Qt->Qt 5.15.2->MSVC 2019 64-bit.
 
-Add the bin directory of the install directory to your PATH variable. An example is: C:\usr\Qt\5.15.2\msvc2019_64\bin.
+Add the bin directory of the install directory to your PATH variable. An example is: 
+
+```
+C:\usr\Qt\5.15.2\msvc2019_64\bin
+```
 
 ## Installing CMake
 
