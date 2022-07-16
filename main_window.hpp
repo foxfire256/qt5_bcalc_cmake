@@ -2,20 +2,20 @@
 #define MAINWINDOW_H
 
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QVBoxLayout>
 
-class QWidget;
 class QLabel;
-class QPushButton;
 class QLineEdit;
+class QPushButton;
+class QVBoxLayout;
+class QWidget;
 
-class MainWindow : public QMainWindow
+class main_window : public QMainWindow
 {
 	Q_OBJECT
 
 public:
-	MainWindow(QWidget *parent = 0);
-	~MainWindow();
+	main_window(QWidget *parent = 0);
+	~main_window();
 
 public slots:
 	void do_calc();

@@ -25,7 +25,8 @@ find_package(Qt5Widgets)
 
 set(MAIN_SOURCE
 	main.cpp
-	MainWindow.cpp
+	main_window.hpp
+	main_window.cpp
 )
 
 set(CMAKE_AUTOMOC ON)

@@ -1,11 +1,12 @@
-#include "MainWindow.hpp"
+#include "main_window.hpp"
 
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QVBoxLayout>
 
 //------------------------------------------------------------------------------
-MainWindow::MainWindow(QWidget *parent)
+main_window::main_window(QWidget *parent)
 	: QMainWindow(parent)
 {
 	setup_ui();
@@ -14,13 +15,21 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 //------------------------------------------------------------------------------
-MainWindow::~MainWindow()
+main_window::~main_window()
 {
-
+	delete ke_edit;
+	delete ke_label;
+	delete calc_button;
+	delete velocity_edit;
+	delete velocity_label;
+	delete weight_edit;
+	delete weight_label;
+	delete main_layout;
+	delete main_widget;
 }
 
 //------------------------------------------------------------------------------
-void MainWindow::setup_ui()
+void main_window::setup_ui()
 {
 	QSizePolicy win_size_policy = QSizePolicy(QSizePolicy::Minimum, 
 		QSizePolicy::Minimum);
@@ -54,7 +63,7 @@ void MainWindow::setup_ui()
 }
 
 //------------------------------------------------------------------------------
-void MainWindow::do_calc()
+void main_window::do_calc()
 {
 	bool conv_ok, all_conv_ok = true;
 
