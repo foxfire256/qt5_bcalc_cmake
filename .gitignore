@@ -4,3 +4,7 @@ build/*
 *.obj
 *.o
 *.dll
+.idea/*
+cmake-build-debug/*
+cmake-build-release/*
+cmake-build-relwithdebinfo/*
